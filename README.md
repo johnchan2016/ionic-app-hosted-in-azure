@@ -10,6 +10,7 @@ Tables of contents
 <div id='projectArchitecture'/>
 
 ### 1. Project Architecture
+
 a. Diagram
 <br/>
 <img src="./images/ionic-app-architecture-diagram.jpg" width="800" height="500">
@@ -35,12 +36,12 @@ d. Azure Cost Estimate
 <div id='SetupPipeline'/>  
 
 ### 2. Set up Pipeline
+
 1. Pipeline Diagram
 <br/>
 <img src="./images/ionic-app-pipeline-design-diagram.jpg" width="800" height="500">
 
 2. Data flow
-Dataflow
 
 1. Developers change application source code.
 2. Application code including the configuration file is committed to the source code repository in Azure Repos.
