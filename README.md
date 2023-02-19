@@ -7,10 +7,12 @@ Tables of contents
 
 *******
 
-<div id='projectArchitecture'/>  
+<div id='projectArchitecture'/>
+
 ### 1. Project Architecture
-a. Diagram 
-<img src="./images/ionic-app-architecture-diagram.jpg" width="500" height="500">
+a. Diagram
+<br/>
+<img src="./images/ionic-app-architecture-diagram.jpg" width="800" height="500">
 
 b. Data flow
 	
@@ -26,13 +28,16 @@ b. Data flow
 c. Use OAuth 2.0 implicit grant flow
 
 d. Azure Cost Estimate
-<img src="./images/ionic-app-azure-cost-estimate.jpg" width="600" height="500">
+<br/>
+<img src="./images/ionic-app-azure-cost-estimate.jpg" width="600" height="400">
 
 
 <div id='SetupPipeline'/>  
+
 ### 2. Set up Pipeline
 1. Pipeline Diagram
-<img src="./images/ionic-app-pipeline-design-diagram.jpg" width="600" height="500">
+<br/>
+<img src="./images/ionic-app-pipeline-design-diagram.jpg" width="800" height="500">
 
 2. Data flow
 Dataflow
