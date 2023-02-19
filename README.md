@@ -16,15 +16,16 @@ a. Diagram
 <img src="./images/ionic-app-architecture-diagram.jpg" width="800" height="500">
 
 b. Data flow
-	
-1. User submit request approval
-2. Ets.api call Power Automate to send Teams notification in the flow
-3. User visit ETS mobile app via link from Teams
-4. User go to AAD login page to sign in with username & password (implicit flow & access token lifetime around 60-75 mins) with browser. Once authenticated, AAD Server return access token
-5. Angular app send request to java middleware to get results  
-6. Backend app service validate access token by audience & scope & use email decoding from token as a parameter
-7. If token is valid, users can view the results
 
+<ol>
+<li>User submit request approval.</li>
+<li>Server APIs call Power Automate to send Teams notification in the flow.</li>
+<li>User visit ionic app via link from Teams.</li>
+<li>User go to AAD login page to sign in with username & password (implicit flow & access token lifetime around 60-75 mins) with browser. Once authenticated, AAD Server return access token.</li>
+<li>Ionic app send request to java middleware to get results.</li>
+<li>Backend app service validate access token by audience & scope & use email decoding from token as a parameter.</li>
+<li>If token is valid, users can view the results</li>
+</ol>
 
 c. Use OAuth 2.0 implicit grant flow
 
