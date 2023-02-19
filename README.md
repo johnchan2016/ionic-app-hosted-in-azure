@@ -37,19 +37,21 @@ d. Azure Cost Estimate
 
 ### 2. Set up Pipeline
 
-1. Pipeline Diagram
+a. Pipeline Diagram
 <br/>
 <img src="./images/ionic-app-pipeline-design-diagram.jpg" width="800" height="500">
 
-2. Data flow
+b. Data flow
 
-1. Developers change application source code.
-2. Application code including the configuration file is committed to the source code repository in Azure Repos.
-3. Continuous integration (DEV) triggers unit tests, security scanning & application build.
-4. Continuous deployment within Azure Pipelines triggers an deployment application artifacts for DEV environment manually.
-5. The artifact with DEV configurations (War file) is deployed to Azure App Service & Blob Storage.
-6. Continuous integration (UAT / PROD) triggers unit tests & application build.
-7. Continuous deployment within Azure Pipelines triggers an deployment application artifacts for UAT / PROD environment manually.
-8. The artifact with UAT Configurations (Jar file) is deployed to Azure App Service & Blob Storage
-9. The deployment seeks approval before proceed.
-10. When approved, the deployment with configuration injected from key vault (Jar file) is deployed to Azure App Service & Blob Storage
+<ol>
+<li>Developers change application source code</li>
+<li>Application code including the configuration file is committed to the source code repository in Azure Repos.</li>
+<li>Continuous integration (DEV) triggers unit tests, security scanning & application build.</li>
+<li>Continuous deployment within Azure Pipelines triggers an deployment application artifacts for DEV environment manually.</li>
+<li>The artifact with DEV configurations (War file) is deployed to Azure App Service & Blob Storage.</li>
+<li>Continuous integration (UAT / PROD) triggers unit tests & application build.</li>
+<li>Continuous deployment within Azure Pipelines triggers an deployment application artifacts for UAT / PROD environment manually.</li>
+<li>The artifact with UAT Configurations (Jar file) is deployed to Azure App Service & Blob Storage</li>
+<li>The deployment seeks approval before proceed.</li>
+<li>When approved, the deployment with configuration injected from key vault (Jar file) is deployed to Azure App Service & Blob Storage</li>
+</ol>
